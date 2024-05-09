@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="post">
+    <fieldset style="width: 20rem;">
+        <legend>pesonaldetails</legend>
+        <label for="name">name</label>
+        <input type="text" placeholder="Enter your name" name="name" id="name"><br><br>
+        <label for="email">email</label>
+        <input type="text" placeholder="email" name="name" id="email" >
+        <br><br>
+        <label for="DOB">DOB</label>
+        <input type="date" name="date" id="date"><br>
+        <br>
+        <button type="button" id="submit1" onclick="myFunction()">Submit</button>
+        <p id="submit">fill the form</p>
+    </fieldset>
+</form>
+<script>
+    function myFunction(){
+        document.getElementById("submit").innerHTML ="You have successfuly register the page.";
+    }
+</script>
+</body>
+</html>
